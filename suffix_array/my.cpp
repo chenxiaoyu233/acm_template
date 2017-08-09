@@ -1,5 +1,5 @@
 /*
- * suffix_array 模板 v1.1
+ * suffix_array 模板 v1.2
  */
 //s : [0,length) 原串
 //sa : 对原串后缀进行排序后的顺序
