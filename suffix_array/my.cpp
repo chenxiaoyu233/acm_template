@@ -53,6 +53,7 @@ namespace SUFFIX_ARRAY{
 			for(int i = 0; i < n; i++) rank[sa[i]] = i;
 		}
 		void get_height(int *s){ //[1,n)
+			s[n] = -1; // 不然循环可能不会终止
 			for(int i = 0,h = 0; i < n; height[rank[i++]] = h){
 				if(rank[i]-1 < 0) { h = 0; continue;}
 				for(h?--h:0; s[sa[rank[i]-1]+h] == s[i+h]; h++);
