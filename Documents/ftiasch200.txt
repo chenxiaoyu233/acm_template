@@ -1,0 +1,776 @@
+PublicTransitHard http://community.topcoder.com/stat?c=problem_statement&pm=13797
+
+BichromeSky http://community.topcoder.com/stat?c=problem_statement&pm=13711
+n个红点，m个蓝点，没有三点共线，第i个红点以p_i的概率出现，求红点的凸包包含所有蓝点的概率
+n, m <= 100
+
+InverseRMQ http://community.topcoder.com/stat?c=problem_statement&pm=13235
+
+TreeDistance http://community.topcoder.com/stat?c=problem_statement&pm=13369
+
+TreePuzzle http://community.topcoder.com/stat?c=problem_statement&pm=13185
+
+EagleInZoo http://community.topcoder.com/stat?c=problem_statement&pm=13117
+
+EllysLamps http://community.topcoder.com/stat?c=problem_statement&pm=11906
+
+SimilarSequencesAnother http://community.topcoder.com/stat?c=problem_statement&pm=12742
+(A, B) 是相似的，当且仅当A, B各删不超过2个字符后相等。给定长度n和字符集m，问相似(A, B)数量。
+n <= 100
+
+TaroCheckers http://community.topcoder.com/stat?c=problem_statement&pm=12996
+n * m的棋盘，第i行前l[i]个格子有一个棋子，后r[i]个格子有一个棋子，每列最多有一个棋子，问方案数。
+n <= 50, m <= 200
+
+OneDimensionalRobot http://community.topcoder.com/stat?c=problem_statement&pm=12999
+
+PerfectSquare http://community.topcoder.com/stat?c=problem_statement&pm=13145
+
+AlienAndPermutation http://community.topcoder.com/stat?c=problem_statement&pm=12949
+
+Perfect Matching http://www.spoj.com/problems/MATCH/
+n个点的二分图，假设完备匹配的数量是x，判断x = 0 (mod 2)
+n <= 300
+
+(False) Face https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&category=360&page=show_problem&problem=2625
+n个点的二分图，假设完备匹配的数量是x，判断x = 0 (mod 4)
+n <= 300
+
+Little Elephant and Broken Sorting http://codeforces.com/contest/258/problem/D
+长度为n的排列，m次交换a_i, b_i，每个交换a_i, b_i有50%的概率不发生，问逆序数的期望
+n, m <= 1000
+
+Inversions problem http://codeforces.com/problemset/problem/513/G3
+长度为n的排列，每次随机一个子段翻转，问m轮后逆序数的期望
+n <= 300, m <= 10^9
+
+# Cliquers [PA 2008, Round 5]
+求$n$个点有标号的无向图的数量，要求每个连通分量都是团。
+$n \leq 200000$
+
+# Isomorphism [SGU 282]
+$n$个点的完全图$m$染色，问同构意义下有多少种染色方案。
+$n \leq 53, m \leq 1000$
+
+# Writing n as the product of k distinct positive integers [PE 495]
+求$n!$写成$k$个不同的数的乘积的方案数。
+$n \leq 10^4, k \leq 30$
+
+# Partition [HDOJ 4651]
+求$n$的拆分数$p_n$。
+$n \leq 10^5$
+$$\prod_{n = 1}^{\infty} (1 - x^n) = \sum_{k = 0}^{\infty} x^{\frac{k(3k \pm 1)}{2}}$$
+
+# Integer Partition [HDOJ 4658]
+求$n$的拆分数，要求数字出现不超过$k$次。
+$k \leq n \leq 10^5$
+
+# Chocolate triangles
+求$n$边型剖分中恰好有$k$个三角形的方案数。
+$n, k \leq 300$
+
+# SWERC 2014 Problem J The Big Painting
+给出矩阵$A, B$，问$A$在$B$中出现了多少次。
+
+# SWERC 2014 Problem H Money Transfers
+给出$n$个点$m$条边的无向图，和一个顶点集$M$，现在给所有边的权值增加$c$，使得$1$到$n$的最短路只包含$M$中的点，求$c$的最小值。
+$n, m \leq 1000$
+
+# CERC 2014 Problem F Vocabulary
+给出$3$个包含`?`的字符串$A$, $B$, $C$，问有多少种把`?`替换为小写字母的方案，使得$A < B < C$，答案模$(10^9+9)$
+$|A|, |B|, |C| \leq 10^6$
+
+# CERC 2014 Problem E Can't stop playing
+你正在玩$1$维版本的2048游戏。数字$2^{a_1}, 2^{a_2}, \dots, 2^{a_n}$依次出现，你可以选择加到左边还是右边，问最后能不能只剩$1$个，输出方案。
+$n \leq 1000, 2^{a_1} + 2^{a_2} + \dots + 2^{a_n} \leq 2^13$
+
+# CERC 2014 Problem L Outer space invader
+有$n$个怪物，第$i$个怪物于第$a_i$秒出现，第$b_i$秒消失，高度是$d_i$。你可以使用威力是$x$的炸弹，消灭高度不超过$x$的所有怪物，代价是$x$。
+问消灭所有怪物的最小的总代价。
+$n \leq 300$
+
+# CERC 2014 Problem J Pork barrel
+给出$n$个点$m$条边的无向图，**在线**回答$q$个询问$(l_i, r_i)$，求只考虑长度在$[l_i, r_i]$内的边时，最小生成树的大小。
+$n \leq 1000, m \leq 10^5, q \leq 10^6$
+
+# CERC 2014 Problem G Virus synthesis
+给出字符串$S$，可以进行$2$种操作：
+- 在某端删除一个字符
+- 如果$S$是偶数长度的回文串，删除左半边/右半边
+问得到空串最少要几步。
+$|S| \leq 10^5$
+
+# CERC 2014 Problem B Mountainous landscape
+$n$条线段组成的山，对于每条线段，输出站在它上面时，所能看到的第一个顶点
+$n \leq 10^5$
+
+Subarray Cuts http://codeforces.com/problemset/problem/513/E2
+数组a_1, a_2, …, a_n，选择k个不相交的连续段，设（从左到右）的和分别是s_1, s_2, …, s_k，最大化|s_1 - s_2| + |s_2 - s_3| + … + |s_{k - 1} - s_k|
+n <= 30000, k <= 200
+
+Permanent http://acdream.info/problem?pid=1027
+A是n * n的矩阵，计算perm(A)
+n <= 20
+
+Permutation http://acm.hdu.edu.cn/showproblem.php?pid=4917
+n个点m条边的有向图，统计拓扑排序的数量
+n <= 40, m <= 20
+
+SimilarNames http://community.topcoder.com/stat?c=problem_statement&pm=12868
+n个字符串s_1, s_2, …, s_n，m个条件(a_i, b_i)，统计满足s_{p(a_i)}是s_{p(b_i)}前缀的排列p_1, p_2, …, p_n数量
+n <= 50, |s_i| <= 50, m <= 8
+
+Permanent http://codeforces.com/problemset/problem/468/E
+A是n * n的矩阵，除了给定的k个位置以外都是1，计算perm(A)
+n <= 10^5, k <= 50
+
+WinterAndSnowmen Kai!
+X, Y \subset {1, 2, …, n}，f({x_1, x_2, …, x_n}= x_1 xor x_2 xor … xor x_n，求f(X) <= f(Y)的方案数
+n <= 5000
+
+WinterAndSnowmen http://community.topcoder.com/stat?c=problem_statement&pm=12891
+X \subset {1, 2, …, n}, Y \subset {1, 2, …, m}，f({x_1, x_2, …, x_n}= x_1 xor x_2 xor … xor x_n，求f(X) <= f(Y)的方案数
+n, m <= 2000
+
+Everlasting L http://acm.hdu.edu.cn/showproblem.php?pid=5116
+n * m的有障碍的棋盘，求放2个L的不同方案数，要求L的两边长度互质
+n, m <= 200
+
+ThreeLLogo http://community.topcoder.com/stat?c=problem_statement&pm=13059
+n * m的有障碍的棋盘，求放3个L的不同方案数
+n, m <= 30
+
+FencingPenguins http://community.topcoder.com/stat?c=problem_statement&pm=12339
+正N边型内有M个企鹅，选择一些顶点建立围栏，要求：
+1. 围栏不能相交
+2. 每个围栏至少包含1个企鹅
+3. 企鹅都被包围
+4. 同色企鹅在同一围栏
+求方案数。
+N <= 222, M <= 50
+
+An easy problem about trees http://codeforces.com/problemset/problem/457/F
+
+Mr. Kitayuta's Gift http://codeforces.com/problemset/problem/506/E 
+
+Deja Vu http://codeforces.com/problemset/problem/331/E2 
+
+Tree and Table http://codeforces.com/problemset/problem/251/E 
+
+Buy One, Get One Free http://codeforces.com/problemset/problem/335/F 
+
+Triangles 3000 http://codeforces.com/problemset/problem/528/E
+3k条直线，等概率挑选3条，求围成三角形面积的期望
+
+Fox and Meteor Shower http://codeforces.com/problemset/problem/388/E
+1k条3维直线，求最大的两两相交的子集
+
+Gena and Second Distance http://codeforces.com/problemset/problem/442/E
+1k个点，求次近的点最远的点
+
+Drawing Circles is Fun http://codeforces.com/problemset/problem/372/E 
+
+维护数组A，支持Q次操作：
+- add(a, b, v) for all a <= i <= b, A[i] += v
+- query(a, b) 求#{i : a <= i <= b and A[i] > 0}
+
+Codeforces 15E Holes
+维护有根树，支持Q次操作：
+- parent[v] := p，保证p > v
+- 询问点v的深度
+$n, q <= 10^5$
+
+Codeforces 348C
+$n$个元素，$m$个集合$S_1, S_2, …, S_m$，$q$次操作：
+- 把集合$S_i$的元素权值+= v
+- 询问集合$S_i$元素的权值和
+$n, |S_1| + |S_2| + … + |S_m|, q <= 10^5$
+
+Chengdu 2012 Problem D / HDOJ 4467
+$n$个点$m$条边的无向图，点有2种颜色，边有权值，$q$次操作：
+- 改变点$v$的颜色
+- 查询端点颜色是$(a, b)$的边权值之和
+$n, m, q <= 10^5$
+
+Chengdu 2013 Problem G / HDOJ 4787
+** 在线 ** 维护字符串集合$S$，$q$次操作：
+- 在$S$中插入$s$
+- 查询$t$在$S$中的子串数
+$s$总长$10^5$，$t$总长$5 * 10^6$
+(2~3 solutions will be presented)
+
+SPOJ UNTITLE1
+维护数组$A$，支持$q$次操作：
+- add(a, b, v) for all a <= i <= b, A[i] += v
+- query(a, b) 求max{S[i] : a <= i <= b}，其中S[i] = A[1] + A[2] + … + A[i]
+$|A|, q <= 50000$
+
+BZOJ 2724
+**在线**查询区间众数。
+(an elegant algorithm to count occurrence)
+
+BZOJ 2741
+**在线**查询区间最大连续异或和。
+
+BZOJ 巧克力王国
+查询半平面内点权的和。
+
+Codechef March14 GERALD07
+无向图，询问编号在$[L_i, R_i]$的边组成子图的连通块数量。
+
+Codeforces 19E
+无向图，询问有多少条边，删掉之后的图是二分图。
+
+SPOJ COT2
+查询树上路径不同颜色数量。
+(2 solutions will be presented)
+
+SPOJ COT3 Combat on a tree
+
+SPOJ RECTANGL Rectangles
+
+POJ 3145 Harmony Forever
+
+POJ 1741 Tree
+统计树上距离不超过$k$的点对数量。
+
+SPOJ FTOUR2
+点有黑白两色，边有长度，求黑点数量<= K的最长路径。
+
+HDU 4812 / Nanjing 2013 K
+点有权，求权值之积 mod (10^6 + 3) = K的路径数量。
+
+TYVJ 1953
+等概率地选择点作为剖分中心，求复杂度的期望。
+
+WC 2010 重建计划
+求长度在[L, R]之间的，平均数最大的路径。
+
+Codeforces 150E
+求长度在[L, R]之间的，中位数最大的路径。
+
+Codeforces 193E
+统计距离不超过L，权值之和不超过W的点对数量。
+
+SPOJ QTREE4
+点有黑白两色，支持(a)修改点的颜色；(b)询问白点对的最大距离。
+
+Codeforces 342E
+点有黑白两色，支持(a)把点变成黑色；(b)询问距离v点最近的黑点距离。
+
+SPOJ QTREE5
+点有黑白两色，支持(a)修改点的颜色；(b)询问距离v点最远的白点距离。
+
+SPOJ QTREE
+边有权值，支持(a)修改边的权值；(b)询问路径上权值的最大值。
+
+Codeforces 117E
+章鱼图，支持(a)修改ab最短路上边的状态（存在、不存在互换）(b)询问连通块数量。
+
+BZOJ 3083
+点有权值，支持(a)修改路径上的权值；(b)修改根节点；(c)询问子树的最大值。
+
+BZOJ 2049 / SDOI 2008
+支持(a)插入、删除边；(b)询问ab是否连通。保证中间结果是森林。
+（LCT or ETT）
+
+SPOJ OTOCI
+支持(a)插入边；(b)询问路径上的权值之和。强制在线。
+
+Topcoder Open 2013 Round 2A ThePowers
+给出A, B，问集合{a^b : 1 <= a <= A, 1 <= b <= B}的大小。
+A, B <= 10^9
+
+SGU 550 Tree Queries Online
+在线维护一棵树，支持删除边，并把它的边权乘在较小的连通块，加在较大的连通块。
+
+HDU 4621 Life Game
+N * M的点阵，对于点(i, j)，将其指定为A类型有A(i, j)的收益，指定为B类型有B(i, j)的收益。R个要求，如果矩形(L_i, D_i) — (R_i, U_i)全是A（或全是B），则获得W_i的收益，问最大收益。
+N, M <= 50, R <= 50000
+
+HDU 4673 Pirate's Chest
+N个箱子，对于i号箱子，要么使用A_i号钥匙打开，要么使用B_i号撬棍打开，要么付出D_i点血打开。
+M层的塔，每一层塔有入口，怪物，至多两个工具，且一定同类型，可以在任意地点上下楼。
+你讨厌上楼梯，现在有H点血，问最少上到几层可以打开所有箱子，同时要求掉血最少。
+N <= 30000, M <= 1000
+
+HDU 4679 Terrorist’s destroy
+N个点的树，删除一条边，使得边权和剩下的树的直径乘积最小。
+N <= 10^5
+
+HDU 4689 Derangement
+给出数列A_1, A_2, …, A_N，A_i in {+1, -1}，求满足(P_i - i) * A_i > 0的排列P数量。
+N <= 1000
+
+Single Round Match 565 UnknownTree
+N + 3个点的树，给出disA[i], disB[i], disC[i]表示1 <= i <= N号点到A, B, C的距离，求可能的树的方案数。
+N <= 50
+
+Single Round Match 561 Orienteering
+N个点的树，随机选择K个点，问遍历K个点最短路径的期望。
+K <= N <= 300
+
+SCOI 2013 数数
+求[L, R]的数字B进制表示的所有子串的和。
+1 <= L <= R < B^100000, B <= 10^5
+
+SCOI 2012 Blinker的仰慕者 http://www.lydsy.com/JudgeOnline/problem.php?id=2757
+
+Codeforces 273D Dima and Figure
+N * M的点阵，问凸的点集的数量，mod (10^9 + 7)。
+(N, M <= 150)
+
+Codeforces 375E Red and Black Tree
+N个点的树。点有黑、白2种颜色。任意交换点的颜色，使得对于任一个点，距离它D以内都至少有一个黑点，求最少的交换次数。
+N <= 500
+
+Codeforces 392E Deleting Substrings
+序列{A_1, A_2, …, A_N}。每次删除连续的子序列{x_1, x_2, …, x_k}，要求
+- |x_{i + 1} - x_i| = 1，
+- 2 x_i >= x_{i - 1} + x_{i + 1}，
+收益W_k，求删除整个序列的最大收益。
+N <= 400
+
+NEERC Eastern Subregional Contest 2013 Problem C CVS
+支持Q次操作：
+1. learn(i, j)
+2. rollback(i)
+3. relearn(i)
+4. clone(i)
+5. check(i)
+Q <= 10^5
+
+NEERC Northern Subregional Contest 2013 Problem L Lonely Mountain
+
+JAG Summer 2012 Problem G Presentation
+
+Single Round Match 570 CurvyonRails
+
+M * M棋盘上有N个有缺陷的皇后（只能攻击主对角线），求被至少1个皇后攻击的格子数量。
+N, M <= 10^5
+
+给出串P, T，求T的连续子串S，使得hamming(S, P)最小。
+|P|, |T| <= 10^5，|Sigma| <= 10
+
+给出串P, T（可能带有通配符?），求P在T中所有匹配位置。
+|P|, |T| <= 10^5
+
+胡渊鸣 城市规划
+计算N个点带标号的连通图数量，答案模1004535809(= 479 * 2^21 + 1)。
+N <= 130000
+O(N log^2 N)
+
+给出A_1, A_2, …, A_N，求min_{i, j} popcount(A_i xor A_j)。
+A_i <= 10^6
+
+(FWT)
+Topcoder Open 2012 Round 2A EvenPaths
+N个点的有向无环图，K个点可能有障碍。
+合法当且仅当点0到点1恰有偶数条路径。
+求2^K种可能中合法的图的数量。
+N <= 50, K <= 32
+
+HDOJ 4656 Evaluation
+给出A_0, A_1, …, A_{N - 1}, 求f(B * C^{2k} + D)，答案模(10^6 + 3)，其中f(x) = sum_i A_i x^i。
+N <= 10^5, A_i, B, C, D <= 10^6
+
+求x^2 = 1 (mod M)的所有解。
+
+求x^K = x (mod M)的解的数量。
+
+求P / Q在B进制下的循环节。
+
+SPOJ MOD Power Modulo Inverted
+给出A, B, M，求最小的x >= 0，使得A^x = B (mod M)。
+A, B, M <= 10^9
+
+Petrozavodsk Summer 2011 Kyiv + Kharkiv NU Contest Problem A A Lot
+给出P，Q组询问(A, B)，求最小x >= 0满足A^x = B (mod P)。
+P <= 10^8, Q <= 10^4
+
+求A x^2 + B x + C = 0 (mod P)的解。
+
+Project Euler 457 A polynomial modulo the square of a prime
+设f(p)表示最小的n满足n^2 - 3n - 1 = 0(mod p^2)，求sum_{p is prime, p <= N} f(p)。
+N <= 10^7
+
+Codeforces 193E Fibonacci Number
+给出F，求最小的n，使得fib(n) = F (mod 10^13)。
+F < 10^13
+
+Petrozavodsk Winter 2008 Warsaw Contest Problem J Sum of a subsequence
+给出A_1, A_2, …, A_{2N}，求它的N元子集，满足元素和是N的倍数。
+N = 10^k，k <= 5
+
+Codeforces 62E World Evil
+n * m的点阵，如下图，求左边到右边的最大流。
+n <= 5, m <= 10^5
+
+Single Round Match 608 BigO
+N个点的有向图，假设在上面走x步的方案数是O(x^K)的，求K的最小值。
+N <= 50
+
+Single Round Match 607 CombinationLockDiv1
+给出两个10进制串A, B，每次可以选择一段数字rotate，求把A变成B的最小操作次数。
+|A|, |B| <= 50
+
+Single Round Match 592 LittleElephantAndPermutationDiv1
+设a_1, a_2, …, a_N和b_1, b_2, …, b_N是两个1, 2, …, N的排列，
+问max{a_1, b_1} + max{a_2, b_2} + … + max{a_N, b_N} >= K的排列数量。
+N <= 50, K <= 2500
+
+Single Round Match 588 KeyDungeonDiv1
+N个房间，每个房间需要doorRed[i]把红钥匙，doorGreen[i]把绿钥匙，房间里面有roomRed[i], roomGreen[i], roomWhite[i]把红、绿、白钥匙。白钥匙可以作为红、蓝钥匙使用。初始有keys[]把三种钥匙，打开一些房间，问手上最多的钥匙数。
+N <= 12, 钥匙数 <= 10
+
+Single Round Match 582 ColorfulBuilding
+N个矩形，第i个矩形的高度是i，颜色是color[i]，问所有排列中从左到右能看到K次颜色变化的数量。
+K <= N <= 36 * 36
+
+Single Round Match 577 EllysChessboard
+8 * 8的棋盘上，在指定位置放棋子，放棋子的代价是到曼哈顿距离最远的棋子距离，问最小的总代价。
+
+Topcoder Open 2012 Round 3B ElevenMultiples
+N个10进制数字片段P_1, P_2, …, P_n，问有多少种方法使得连接之后是11的倍数。
+N <= 50
+
+Single Round Match 601 WinterAndShopping
+N个商店卖球。第i个商店在第first[i]天开业，有red[i]个红球，green[i]个绿球，blue[i]个蓝球。商店每天卖1个球，所有商店卖的球颜色相同。同时营业的商店不超过2个。求方案数。
+N <= 50，red[i], green[i], blue[i] <= 100，first[i] + red[i] + green[i] + blue[i] <= 500
+
+Single Round Match 594 FoxAndAvatar
+1, 2, …, N以行为主序排列在宽度是W的矩阵上。每次可以删除一个子矩形中的所有数字，并重新排列剩余数字。问最后留下数字X的最小操作次数。
+W <= N <= 3000
+
+Single Round Match 593 WolfDelaymasterHard
+定义形如0^n1^n的串是好的，好串的连接是好的。长度为N的字符串，包含0、1、？三种字符，替换？为0、1，使得形成的串是好的。求方案数。
+N <= 2 * 10^6
+
+Single Round Match 591 StringPath
+给出字符串A, B，问有多少N * M的字符矩形，使得存在两条(1, 1)到(N, M)的路径上面的字符串恰好是A, B。
+N, M <= 8
+
+Single Round Match 589 FlippingBitsDiv1
+给出长度为n的01串和常数M，通过下面两种操作使得长度为N - M的前后缀相等：
+1. 翻转某位
+2. 翻转长度k * M的前缀(k >= 1)
+求最少的操作次数。
+N <= 300
+
+Single Round Match 583 RandomPaintingOnABoard
+N * M的矩阵P，每次以P[i][j] / sum{P[i][j]}的概率选择格子(i, j)，问每行每列都被选择至少一次所需要的步数期望。
+N, M <= 21, N * M <= 150, P[i][j] < 10
+
+Topcoder Open 2013 Round 3A TrickyInequality
+M个整数变量x_1, x_2, …, x_M满足：
+1. x_1, x_2, …, x_M >= 1
+2. x_1 + x_2 + … + x_M <= S
+3. x_1, x_2, …, x_N <= T
+求方案数模(10^9 + 7)。
+M <= 10^9, M - N <= 100, T <= 10^5, N * T <= S
+
+Single Round Match 578 DeerInZooDivOne
+n个点的树，求两颗不相交的子树，它们同构同时大小最大。
+n <= 50
+
+Single Round Match 573 WolfPack
+求从(X_1, Y_1)移动M步到(X_2, Y_2)的方案数，每次移动可以往上下左右移动一格。
+M <= 100000
+
+Single Round Match 569 MegaFactorial
+定义f(n, k)满足：
+1. f(n, k) = f(n - 1, k) * f(n, k - 1)
+2. f(0, k) = 1
+3. f(n, 0) = n
+求f(N, K)在B进制下末尾0的数量。结果模(10^9 + 7)。
+N <= 10^9, K <= 16, B <= 10
+
+Single Round Match 562 InducedSubgraphs
+N个点的树，问有多少种标号方式，使得对所有1 <= i <= N - K + 1，点集{i, i + 1, …, i + K- 1}是连通的。
+N <= 40
+
+Single Round Match 560 BoundedOptimization
+N个变量x_i，满足L_i <= x_i <= R_i，且X_1 + X_2 + … + X_n <= S，求一个特殊二次式的最大值（无平方项，无一次项，系数都是1）。
+N <= 13
+
+Single Round Match 550 ConversionMachine
+给出只包含abc 3种字符的串A和串B，把a -> b的花费是cost[0]，b -> c是cost[1]，c -> a是cost[2]，问在总费用不超过M的情况下，有多少方式能让A变换到B。
+|A|, |B| <= 11
+
+POJ 2793 / NEERC 2005
+求仙人掌的生成仙人掌数量。
+
+IOI 2008 Islands
+求章鱼图的直径。
+
+POJ 3567 / NEERC 2007
+求仙人掌图的直径。
+
+POJ 3961 / NEERC 2010
+把仙人掌图分成N / K个连通块，每个连通块大小恰好是K。
+
+Codeforces 379G
+仙人掌，可以把涂成黑白两色（可以不涂），相邻的点不能有相同的颜色。对于所有的1 <= a <= n，求最多能放的白点数量。
+
+Project Euler 416 A frog's trip
+N个格子，一只青蛙1 -> N -> 1，重复M次。
+青蛙每次只能跳跃1、2、3个格子，问至多只有1个格子没被访问过的路径数量。
+N <= 10^12, M <= 10
+
+伍一鸣 Binomial
+给出N, P，计算C(r) = # of k where 0 <= k < N and binom(N, k) = r (mod P)，答案模29。
+P = 51061, N < P^10
+
+SRM 518 Nim
+统计满足以下条件的(x_1, x_2, …, x_K)的数量：
+1. x_i是质数
+2. x_i <= L
+3. x_1 xor x_2 xor … xor x_K = 0
+K <= 10^9, L <= 5 * 10^4
+
+Topcoder Open 2012 Round 2B SequenceTransmission
+将A + B, A * 2 + B, …, A * N + B的二进制表示连接，问相邻两位不同的数量。
+A <= 40000，B <= 10^18, N <= 10^12
+
+Project Euler 439 Sum of sum of divisors
+设d(n)表示n的约数和，给出N，求sum_{1 <= i <= N} sum_{1 <= j <= N} d(i * j)。
+N <= 10^11
+
+SPOJ LCMSUM
+给出N，求lcm(N, 1) + lcm(N, 2) + … + lcm(N, n)。
+N <= 1000000, 300000组数据
+
+贾志鹏 Crash的数字表格
+给出N, M, 求sun_{1 <= i <= N} sum_{1 <= j <= M} lcm(i, j)，答案模20101009。
+N, M <= 10^7
+
+顾昱洲 JZPKIL
+给出N, A, B，求sum_{1 <= i <= N} gcd(N, i)^A lcm(N, i)^B$，答案模(10^9 + 7)。
+N <= 10^9, A, B <= 3000
+
+POI X Trinomial
+求(1 + x + x^2)^N展开式中x^K的系数，答案模3。
+
+SRM 536 BinaryPolynomialDivOne
+求多项式P(x)^M中x^K的系数，答案模2。
+deg P < 50, M <= 10^18
+
+Topcoder Open 2012 Round 3A CowsMooing
+N头牛，第i头牛按照pattern_i moo，求count[i]表示50!内恰好有i头牛moo的时间，答案模$10^9+7$。
+N <= 30, |pattern_i| <= 50
+
+BOI 2010 Candy
+定义distinct({a_1, a_2, …, a_n}) = # of {sum_i a_i x_i : x_i in {0, 1}}.
+给出a_1, a_2, …, a_n，求distinct({a_1, a_2, …, a_n} \ {a_i} + {x})的最大值，和(i, x)字典序最小的解。
+n <= 100
+1 <= a_i <= 7000
+
+SRM 478 RandomApple
+n个盒子，m种苹果，第i个盒子里第j种苹果的数量是A(i, j)。
+等概率地选择盒子的子集，等概率地选择前一步选中的苹果，求prob(1), prob(2), …, prob(m)。其中prob(i)表示选中第i种苹果的概率。
+n, m <= 50, 0 <= A(i, j) < 200
+
+SPOJ LIS2
+给出(x_1, y_1), (x_2, y_2), …, (x_n, y_n)，求i_1 < i_2 < … < i_k，满足
+x_{i_1} < x_{i_2} < … < x_{i_k}
+y_{i_1} < y_{i_2} < … < y_{i_k}，求k的最大值。
+n <= 10^5
+
+SRM 610 MiningGoldHard
+给出(x_1, y_1), (x_2, y_2), …, (x_n, y_n), {a_1, a_2, …, a_{n - 1}), (b_1, b_2, …, b_{n - 1})，
+求(x’_1, y’_1), (x_2’, y_2’), …, (x’_n, y’_n)满足：
+¥
+¥
+求sum_i |x_i - x’_i| + |y_i - y’_i|的最小值。
+n <= 1000
+A, B <= 10^6
+
+IOI 2004 Hermes
+按顺序访问(x_1, y_1), (x_2, y_2), …, (x_n, y_n)，只要横或者纵坐标相当即算访问，问曼哈顿距离的最小值。
+n <= 2000, |x_i|, |y_i| <= 1000
+
+IOI 2002 Batch Scheduling
+n个任务顺序执行，第i个任务所需时间time[i]，权重是weight[i]。
+任务分批进行，每批任务所需时间是sum time[i] + T。
+在t时刻完成任务i的代价是t * weight[i]，求总代价的最小值。
+n <= 10000
+
+POI XIII Frogs (Simplified)
+n * m的棋盘，k个障碍，对于每个点，求其欧几里得距离最近的障碍。
+n, m <= 1000
+
+World Finals 2011 Machine Works
+m天，初始有c元。n个机器可以购买，对于第i个机器，只有在第day[i]天可以购买，买入的价格是buy[i]，卖出的价格是sell[i]，每天的利润是profit[i]。
+开始、结束都没有机器，同时最多拥有1个机器，求最大的利润。
+n <= 100000
+
+PA 2009 Drilling
+给出c_1, c_2, …, c_n，求f(1, n)。
+其中f(i, j) = min_{i < k < j} {max{f(i, k), f(k, j)} + c[k]}。
+n <= 2000
+
+Codeforces 321E
+n个人顺序分成k组，使同组人之间的陌生度之和最小。
+n <= 4000,  k <= 800
+
+SRM 478 KiwiJuice
+n个杯子，容量是c，初始的水量是c_1, c_2, …, c_n。可以互相倒水，每次只能在空或满时停止。卖掉一个水量是x的杯子获得value[x]元，问最多获得的钱数。
+n <= 15
+
+SPOJ TLE
+给出c_1, c_2, …, c_n，求x_1, x_2, …, x_n的方案数，满足：
+¥
+¥
+¥
+n <= 50, m <= 15
+
+SGU 327 Yet Another Palindrome
+n个字符串s_1, s_2, …, s_n，找包含它们作为子串的最短回文串。
+n <= 14, |s_i| <= 30
+
+Codeforces 86C Genetic engineering
+m个模板串s_1, s_2, …, s_m，求长度为n的序列，使得能被完全覆盖。
+m <= 10, |s_i| <= 10, n <= 1000, s_i in {A, C, T, G}^+
+
+Codeforces 55D Beautiful numbers
+求[L, R]中能被非零数位整除的数。
+L, R <= 9 * 10^18
+
+SGU 258 Almost Lucky Numbers
+数x是幸运的，当且仅当它的前、后半的数位和相等。数x几乎是幸运的，当且仅当至多修改1位之后是幸运的。
+求[L, R]中几乎幸运的数。
+L, R <= 10^9
+
+SGU 390 Tickets
+依次考虑[L, R]的数，每次把x的数位和加进计数器counter，如果counter >= K则counter清零，问counter清零的次数。
+L, R <= 10^18, K <= 1000
+
+SPOJ ININT
+对于数字x，每次可以将它加上它的一位。求1变到n的最小次数，并求方案数。
+n <= 10^9
+
+POI XVII Crystals
+给出a_1, a_2, …, a_n，求x_1, x_2, …, x_n的数量满足：
+¥
+¥
+¥
+
+SGU 542 Gena vs Petya
+给出a_1, a_2, …, a_n，求x的数量满足(a_1 - x) xor (a_2 - x) xor … xor (a_n - x) = 0。
+n <= 2 * 10^5, a_i <= 10^18
+
+http://main.edu.pl/en/archive/oi/13/tan
+
+Project Euler 355 Maximal coprime subset
+给出N，在{1, 2, …, N}中挑选一个两两互素的子集，使得元素的总和最大。
+N <= 200000
+
+计算sum_{0 <= i < n} [(a i + b) / c]。
+
+Project Euler 452 Long Products
+统计x_1 * x_2 * … * x_N <= M，答案模1234567891。
+N, M <= 10^9
+
+Winter Camp 2012 糖果公园
+
+SGU 529 It's Time to Repair the Roads
+无向图，修改边权，询问最小生成树。
+
+Tsinsen 1321 Attack (Chao Li)
+2维平面上$n$个点，支持$q$次操作：
+- 修改点权
+- 询问平行于坐标轴的矩形区域内点权第$k$小的值
+$n <= 60000, q <= 10000$
+
+$k$-th number with insertion
+
+PA 2011 Kangaroos
+给出${(A_1, B_1), (A_2, B_2), …, (A_n, B_n)}$，$q$次询问$[l, r]$，询问满足$[Li, Ri]$交$[l,r]$非空的最长连续i数量。
+$n <= 50000, m <= 200000$
+
+CTSC 2010 jewelry
+树，点上有字符，定义$ps(x, y)$表示点$x$到点$y$唯一路径上字母的连接，$count(p, t)$表示串$p$在$t$中的出现次数。给定$T$，求$sum_{x, y} count(ps(x, y), T)$
+
+Knapsack [Unpublished problem]
+$n$个数$A_1, A_2, …, A_n$，对于所有$s$，求和恰好是$s$的子集个数。
+($n, A_1 + A_2 + … + A_n <= 10^5$)
+
+Codeforces 235E Number Challenge
+设d(n)表示n的约数个数，给出A, B, C，求sum_{1 <= i <= A, 1 <= j <= B, 1 <= k <= C} d(i * j * k)。
+A, B, C <= 2000
+
+HDU 4626 Jinkeloid
+字符串|S|，Q个询问T = {T(i, 1), T(i, 2), …, T(i, C_i)}，有多少子串T中字符出现了偶数次。
+|S| <= 10^5, Q <= 10^5，|Sigma| <= 20, C_i <= 5
+
+Single Round Match 596 BitwiseAnd
+集合S是好的，当且仅当：
+- 任意x, y in S, x & y > 0
+- 任意x, y, z in S, x & y & z = 0
+给出T，求T \subset S \subset [2^60 - 1]，使得S是好的，而且字典序最小。
+
+Single Round Match 596 SparseFactorial
+定义sparse factorial f(n) = n * (n - 1^2) * (n - 2^2) * … * (n - k^2) where k^2 < n <= (k + 1)^2。
+求满足L <= n <=R且f(n) % D = 0的n的数量。
+L, R <= 10^12，D <= 10^6
+
+PQHull 
+
+Chengdu 2012 Problem J / HDOJ 4473
+统计满足$1 <= x * y * z <= n$的$(x, y, z)$
+$n <= 10^11$
+
+Project Euler 379
+统计满足$1 <= lcm(x, y) <= n$的$(x, y)$
+$n = 10^12$
+
+POI XIV Queries
+$n$个询问形如$(a, b, d)$，统计满足$1 <= x <= a, 1 <= y <= b$且$gcd(x, y) = d$的$(x, y)$
+$n, a, b, d <= 50000$
+
+SPOJ PGCD
+$t$个询问形如$(n, m)$，统计满足$1 <= x <= n, 1 <= y <= m$且$gcd(x, y)$是质数的$(x, y)$
+$t <= 10, n, m <= 10^7$
+
+Hangzhou 2013 Online / HDOJ 4746
+定义$p(n)$表示$n$的质因子个数。
+$q$个询问形如$(n, m, k)$，统计满足$1 <= x <= n, 1 <= y <= m$且$p(gcd(x, y)) <= k$的$(x, y)$
+$q <= 5000, n, m, k <= 5 * 10^5$
+
+Project Euler 388
+统计满足$1 <= x, y, z <= n$且$gcd(x, y, z) = 1$的$(x, y, z)$
+$n = 10^10$
+
+Project Euler 402 Integer-valued polynomial
+定义$M(a, b, c) = \gcd\{n^4 + a n^3 + b n^2 + c n : n in \mathbb{N}\}$，例如$M(4, 2, 5) = 6$。
+$S(n) = \sum_{0 < a, b, c \leq n} M(a, b, c)$。
+求$sum_{2 <= k <= K} S(fib_k) \bmod 10^9$。
+
+TCO 2013 2B LitPanels
+$n * m$的矩形，把若干格子点亮，要求点亮的格子能被$2$个$a * b$的覆盖，求方案数。
+
+Project Euler 453
+$n \times m$的点阵，统计非退化的四边形数量，答案mod 135707531。
+
+SRM 600 LotsOfLines
+给出$A, B$，考虑所有直线$y = ax + b$满足$0 <= a < A, 0 <= b < B$，问平面被分成了几块。
+$A, B <= 1200$
+
+HDOJ 4609
+给出$A_1, A_2, ..., A_n$，统计有多少对$(i, j, k)$满足$A_i, A_j, A_k$是三角形的三边。
+$n, A_i <= 10^5$
+
+SRM 603 SumOfArrays
+给出长度为$n$的数组$A, B$，安排一个顺序，使得$A[i] + B[i]$的众数最大。
+$1 <= n <= 10^5, 0 <= A[i], B[i] <= 10^5$ 数据随机
+
+HDOJ 4624
+给出一棵树，求$E(u) = sum_v (dist(u, v))^k$，答案模$10007$。
+$n <= 50000, k <= 500$
+
+HDOJ 4624
+$n$个白球，每次随机段区间染黑，问染成全黑的期望次数。
+$n <= 50$
+
+统计满足$1 <= x * y <= n$的$(x, y)$
+$n <= 10^14$
