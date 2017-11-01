@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{listings}   % include the package before using it
+\usepackage{color}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{geometry}
+\geometry{left=0.5cm, right=0.5cm, top=0.5cm,bottom=0.5cm}
+
+
+\setmainfont{Monaco} % fonts
+
+% colors
+\definecolor{Yellow}{RGB}{165, 119, 6}
+\definecolor{Orange}{RGB}{189, 54, 18}
+\definecolor{Red}{RGB}{209, 28, 36}
+\definecolor{Magenta}{RGB}{199, 27, 111}
+\definecolor{Violet}{RGB}{89, 90, 183}
+\definecolor{Blue}{RGB}{32, 118, 199}
+\definecolor{Cyan}{RGB}{37, 146, 134}
+\definecolor{Green}{RGB}{115, 138, 4}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{Green},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=none,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle= \color{Blue},       % keyword style
+  language=c++,                 % the language of the code
+  %morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\color{Magenta}, % the style that is used for the line-numbers
+  rulecolor=\color{Violet},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{Cyan},     % string literal style
+  tabsize=8,	                   % sets default tabsize to 2 spaces
+  title=\lstname,                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+   morekeywords={alignas,continute,friend,register,true,alignof,decltype,goto,
+    reinterpret_cast,try,asm,defult,if,return,typedef,auto,delete,inline,short,
+    typeid,bool,do,int,signed,typename,break,double,long,sizeof,union,case,
+    dynamic_cast,mutable,static,unsigned,catch,else,namespace,static_assert,using,
+    char,enum,new,static_cast,virtual,char16_t,char32_t,explict,noexcept,struct,
+    void,export,nullptr,switch,volatile,class,extern,operator,template,wchar_t,
+    const,false,private,this,while,constexpr,float,protected,thread_local,
+    const_cast,for,public,throw,std},
+    emph={map,set,multimap,multiset,unordered_map,unordered_set,
+    unordered_multiset,unordered_multimap,vector,string,list,deque,
+    array,stack,forwared_list,iostream,memory,shared_ptr,unique_ptr,
+    random,bitset,ostream,istream,cout,cin,endl,move,default_random_engine,
+    uniform_int_distribution,iterator,algorithm,functional,bing,numeric,cstring,cstdio},
+    emphstyle=\color{Red},
+    xleftmargin=1em,xrightmargin=1em, aboveskip=1em
+}
+
+\begin{document}
+\begin{lstlisting}[language=c++]
+%add codes heres
+\end{lstlisting}
+\end{document}
