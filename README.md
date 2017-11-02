@@ -6,6 +6,7 @@
 - Math Template
 - String Template
 - Documents
+- TrainingGuide
 
 # ToDo List
 
