@@ -130,3 +130,13 @@ namespace  PrimitiveRoot{
 		}
 	}
 };
+
+//useage:
+//要使用n_times_remainder的话，直接调用即可。
+//
+//只需要求P的原根时
+//set_mod(P); ans = get_primitive_root();
+//
+//只需要求A关于P的离散对数时
+//set_mod(P); get_primitive_root();
+//D_log_prework(); ans = D_log(A);
