@@ -25,8 +25,11 @@ namespace FFT{
 			if(t > i) swap(A[i],A[t]);
 		}
 	}
-	inline void DFT(complex<double> A[], int n){ // 保证n = 2^k之后再调用。
-		int k = 0; while((1<<k) < n) k++;
+	inline void DFT(complex<double> A[], int &n){  // 这个算法会修改n, 不过这样正好
+		int k = 0; while((1LL<<k) < n) k++;
+		for(int i = n, ed = 1LL << k; i < ed; i++) A[i] = 0;
+		n = 1LL << k;
+
 		BitReverseCopy(A,n,k);
 		complex<double> wm,w,t,u;
 		for(int s = 1; s <= k; s++){
