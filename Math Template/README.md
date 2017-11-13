@@ -2,6 +2,7 @@
 
 # contents
 - FFT
+- NTT
 - Liner_Base
 - Mod_Equation
 - Primitive_Root
@@ -9,6 +10,5 @@
 - simpson
 
 # ToDo List
-- NTT
 - Lucas
 
